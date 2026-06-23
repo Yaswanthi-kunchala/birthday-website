@@ -6,7 +6,7 @@
     <style>
 
         body{
-            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+            background: linear-gradient(to right, #9ae9ff, #fad0c4, #fad0c4);
             text-align: center;
             font-family: Arial;
             margin-top: 100px;
@@ -22,6 +22,29 @@
             color: blue;
             font-size: 35px;
         }
+        .photo{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-top:20px;
+
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%{
+                transform: translateY(0px);
+            }
+
+            50%{
+                transform: translateY(-20px);
+            }
+
+            100%{
+            transform: translateY(0px);
+            }
+    }
 
 
         .emoji{
@@ -34,17 +57,23 @@
 
 <body>
 
-    <h1>🎂 Happy Birthday paruu 🎂</h1>
+    <h1>🎂 Happy Birthday yash 🎂</h1>
 
     <h2>Wishing You a Day Filled With Happiness and Joy! 🎉</h2>
+
+
     <h3>
     May all your dreams come true and may this year bring you
     happiness, success and lots of beautiful memories! 💖
 </h3>
+    <img src="frnd.jpg.jpeg" class="photo">
 
     <div class="emoji">
         🎈🎁🎊🎂🎉🎈
     </div>
+    <audio controls autoplay loop>
+    <source src="Andhamaina Seetakoka Chiluka - SenSongsMp3.Co.mp3" type="audio/mpeg">
+</audio>
 
 </body>
 </html>
